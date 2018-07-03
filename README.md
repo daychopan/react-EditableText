@@ -1,6 +1,11 @@
 # EditableText
 Click to edit text in React.js
 
+### Features
+Save text on
+- Keypress enter
+- Lost focus
+
 ### How to:
 Download the component (EditableText) and place it under the "src" folder.
 
