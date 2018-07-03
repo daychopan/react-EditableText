@@ -8,7 +8,7 @@ Save text on
 - Lost focus
 
 ### How to:
-Download the component (EditableText) and place it under the "src" folder.
+Download the component (EditableText) and place it under the "src" folder.  
 Treat it like an <input />, so pass in onChange and value as props
 
 ### Minimal example
