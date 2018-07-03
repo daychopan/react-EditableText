@@ -32,7 +32,7 @@ class Example extends Component {
   }
   render() {
     return(
-      <EditableText />
+      <EditableText value={this.state.text} onChange={this.handleChange}/>
     );
   }
 }
