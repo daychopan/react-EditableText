@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class EditableLabel extends Component {
+class EditableText extends Component {
 
   constructor(props) {
     super(props);
@@ -39,4 +39,4 @@ class EditableLabel extends Component {
   }
 }
 
-export default EditableLabel;
+export default EditableText;
