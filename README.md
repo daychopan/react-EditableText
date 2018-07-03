@@ -7,9 +7,8 @@ Save text on
 - Keypress enter
 - Lost focus
 
-### How to:
-Download the component (EditableText) and place it under the "src" folder.  
-Treat it like an ```<input />```, so pass in onChange and value as props
+### Documentation
+EditableText behaves just like an ```<input />```, so pass in onChange and value as props
 
 ### Minimal example
 
