@@ -5,8 +5,6 @@ class EditableText extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      name: this.props.name,
-      text: 'test',
       editable: false
     }
   }
@@ -14,12 +12,6 @@ class EditableText extends Component {
   changeEditable = () => {
     this.setState({
       editable: !this.state.editable
-    })
-  }
-
-  handleChange = (e) => {
-    this.setState({
-      text: e.target.value
     })
   }
 
@@ -31,10 +23,10 @@ class EditableText extends Component {
 
   render() {
     if(!this.state.editable) {
-      return (<div onClick={this.changeEditable}>{this.state.text}</div>)
+      return (<div onClick={this.changeEditable}>{this.props.value}</div>)
     }
     else {
-      return (<div><input name={this.props.name} value={this.state.text} onBlur={this.changeEditable} onKeyPress={this.handleKeyPress} onChange={this.handleChange} autoFocus/></div>);
+      return (<div><input name={this.props.name} value={this.props.value} onBlur={this.changeEditable} onKeyPress={this.handleKeyPress} onChange={this.props.onChange} autoFocus/></div>);
     }
   }
 }
