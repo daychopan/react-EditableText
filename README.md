@@ -1,5 +1,6 @@
 # EditableText
-Click to edit text in React.js
+Click to edit text in React.js  
+![editabletext](https://user-images.githubusercontent.com/31367899/42241971-aab6ba82-7f0c-11e8-8f38-9197afac2cdf.gif)
 
 ### Features
 Save text on
