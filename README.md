@@ -8,7 +8,11 @@ Save text on
 - Lost focus
 
 ### Documentation
-EditableText behaves just like an ```<input />```, so pass in onChange and value as props
+EditableText behaves just like an ```<input />```, so pass in onChange and value as props.  
+The component can optionally take "name" as a prop
+```javascript
+<EditableText name="sample"/>
+```
 
 ### Minimal example
 
@@ -35,10 +39,4 @@ class Example extends Component {
     );
   }
 }
-```
-
-### Customizable
-The component can optionally take "name" as a prop
-```javascript
-<EditableText name="sample"/>
 ```
