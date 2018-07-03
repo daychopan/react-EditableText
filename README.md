@@ -9,15 +9,27 @@ Save text on
 
 ### How to:
 Download the component (EditableText) and place it under the "src" folder.
+Treat it like an <input />, so pass in onChange and value as props
 
-
-### Example usage
+### Minimal example
 
 ```javascript
 import EditableText from './EditableText';
 import React, { Component } from 'react';
 
 class Example extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      text: 'test'
+    }
+  }
+
+  handleChange = (e) => {
+    this.setState({
+      text: e.target.value
+    })
+  }
   render() {
     return(
       <EditableText />
@@ -27,7 +39,7 @@ class Example extends Component {
 ```
 
 ### Customizable
-The component can optionally take "name" as a prop for further customizations
+The component can optionally take "name" as a prop
 ```javascript
 <EditableText name="sample"/>
 ```
