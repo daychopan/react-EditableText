@@ -24,3 +24,9 @@ class Example extends Component {
   }
 }
 ```
+
+### Customizable
+The component can optionally take "name" as a prop for further customizations
+```javascript
+<EditableText name="sample"/>
+```
