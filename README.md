@@ -9,7 +9,7 @@ Save text on
 
 ### How to:
 Download the component (EditableText) and place it under the "src" folder.  
-Treat it like an ```html <input />```, so pass in onChange and value as props
+Treat it like an ```<input />```, so pass in onChange and value as props
 
 ### Minimal example
 
