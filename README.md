@@ -9,9 +9,12 @@ Save text on
 
 ### Documentation
 EditableText behaves just like an ```<input />```, so pass in onChange and value as props.  
-The component can optionally take "name" as a prop
+
+The component can optionally take name and commit as props  
+
+The commit prop listens for final change for the text and not on each change like onChange  
 ```javascript
-<EditableText onChange={this.handleChange} value={this.state.text} name="sample" />
+<EditableText  value={this.state.text} name="sample" commit={this.handleCommit} onChange={this.handleChange}/>
 ```
 
 ### Minimal example
