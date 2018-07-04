@@ -9,7 +9,10 @@ class EditableText extends Component {
     }
   }
 
-  changeEditable = () => {
+  changeEditable = (e) => {
+    if(this.state.editable) {
+      this.props.commit(e);
+    }
     this.setState({
       editable: !this.state.editable
     })
@@ -17,16 +20,16 @@ class EditableText extends Component {
 
   handleKeyPress = (e) => {
     if(e.key === 'Enter') {
-      this.changeEditable()
+      this.changeEditable(e)
     }
   }
 
   render() {
     if(!this.state.editable) {
-      return (<div onClick={this.changeEditable}>{this.props.value}</div>)
+      return (<span onClick={this.changeEditable}>{this.props.value}</span>)
     }
     else {
-      return (<div><input name={this.props.name} value={this.props.value} onBlur={this.changeEditable} onKeyPress={this.handleKeyPress} onChange={this.props.onChange} autoFocus/></div>);
+      return (<span><input name={this.props.name} value={this.props.value} onBlur={this.changeEditable} onKeyPress={this.handleKeyPress} onChange={this.props.onChange} autoFocus/></span>);
     }
   }
 }
