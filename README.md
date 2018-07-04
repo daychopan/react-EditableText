@@ -66,7 +66,7 @@ class Example extends Component {
   }
   render() {
     return(
-      <EditableText commit={this.handleCommit} name="address" value={this.state.text} onChange={this.handleChange}/>
+      <EditableText name="address" value={this.state.text} commit={this.handleCommit} onChange={this.handleChange}/>
     );
   }
 }
