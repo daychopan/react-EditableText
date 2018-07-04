@@ -62,6 +62,7 @@ class Example extends Component {
   
   handleCommit = (e) => {
     // Add logic to set state in parent component
+    // e.target.name equals address and e.target.value equals this.state.text
   }
   render() {
     return(
