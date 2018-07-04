@@ -62,11 +62,11 @@ class Example extends Component {
   
   handleCommit = (e) => {
     // Add logic to set state in parent component
-    // e.target.name equals address and e.target.value equals this.state.text
+    // e.target.name equals "example" and e.target.value equals this.state.text
   }
   render() {
     return(
-      <EditableText name="address" value={this.state.text} commit={this.handleCommit} onChange={this.handleChange}/>
+      <EditableText name="example" value={this.state.text} commit={this.handleCommit} onChange={this.handleChange}/>
     );
   }
 }
