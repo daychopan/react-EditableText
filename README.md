@@ -11,7 +11,7 @@ Save text on
 EditableText behaves just like an ```<input />```, so pass in onChange and value as props.  
 The component can optionally take "name" as a prop
 ```javascript
-<EditableText name="sample" onChange={this.handleChange} value={this.state.text}/>
+<EditableText onChange={this.handleChange} value={this.state.text} name="sample" />
 ```
 
 ### Minimal example
