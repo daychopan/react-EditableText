@@ -40,3 +40,34 @@ class Example extends Component {
   }
 }
 ```
+
+### Advanced example
+```javascript
+import EditableText from './EditableText';
+import React, { Component } from 'react';
+
+class Example extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      text: 'test'
+    }
+  }
+
+  handleChange = (e) => {
+    this.setState({
+      text: e.target.value
+    })
+  }
+  
+  handleCommit = (e) => {
+    // Add logic to set state in parent component
+  }
+  render() {
+    return(
+      <EditableText commit={this.handleCommit} name="address" value={this.state.text} onChange={this.handleChange}/>
+    );
+  }
+}
+```
+
