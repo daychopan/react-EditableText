@@ -61,6 +61,7 @@ class Example extends Component {
   handleChange = (e) => {
     this.setState({
       text: e.target.value
+      // optionally [e.target.name]: e.target.value to handle multiple EditableText components
     })
   }
   
