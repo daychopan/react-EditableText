@@ -15,7 +15,11 @@ The component can optionally take name and commit as props
 
 The commit prop listens for final change on the text and not on each change like onChange  
 ```javascript
-<EditableText value={this.state.text} name="sample" commit={this.handleCommit} onChange={this.handleChange}/>
+<EditableText 
+  value={this.state.text} 
+  name="sample" 
+  commit={this.handleCommit} 
+  onChange={this.handleChange}/>
 ```
 
 ### Minimal example
