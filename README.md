@@ -19,7 +19,7 @@ The commit prop listens for final change on the text and not on each change like
   value={this.state.text} 
   name="sample" 
   commit={this.handleCommit} 
-  onChange={this.handleChange}/>
+  onChange={this.handleChange} />
 ```
 
 ### Minimal example
